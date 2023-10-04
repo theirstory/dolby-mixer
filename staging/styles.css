@@ -43,11 +43,11 @@ body {
 
 #screenshare {
   height: auto;
-  width: 100%;
 }
 
 video {
   height: auto;
+  width: 100%;
 }
 
 /* Display a video player in full screen */
