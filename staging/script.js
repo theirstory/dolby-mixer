@@ -122,6 +122,9 @@ const resizeVideos = () => {
   const newWidth = (
     1920 / Math.ceil(Math.sqrt(visibleParticipants.length + visibleShareScreen))
   ).toString();
+  const newHeight = (
+    1080 / Math.ceil(Math.sqrt(visibleParticipants.length + visibleShareScreen))
+  ).toString();
   participantNodes.map((p) => {
     console.log(p);
     if (p === "screenshare") {
@@ -130,6 +133,7 @@ const resizeVideos = () => {
     } else {
       const node = $("#participant-" + p);
       node.css("width", `${newWidth}px`);
+      node.find("video").css("height", `${newHeight}px`)
     }
   });
 };
