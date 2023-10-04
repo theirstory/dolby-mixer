@@ -131,10 +131,9 @@ const resizeVideos = () => {
       const node = $(`#${p}`);
       node.css("width", `${newWidth}px`);
     } else {
-      const node = $("#participant-" + p);
-      node.css("width", `${newWidth}px`);
-      node.css("height", `${newHeight}px`);
-      node.find("video").css({"height": `${newHeight}px`, "object-fit": `contain`});
+      const node = $('#participant-' + p);
+      node.css({ width: `${newWidth}px`, height: `${newHeight}px` });
+      node.find('video').css({ height: `${newHeight}px`, 'object-fit': `contain` });
     }
   });
 };
