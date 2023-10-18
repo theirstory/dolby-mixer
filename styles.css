@@ -39,6 +39,7 @@ body {
   box-sizing: border-box;
   transition: transform 0.5s;
   overflow: hidden;
+  background-color: black;
 }
 
 #screenshare {
@@ -47,7 +48,6 @@ body {
 
 video {
   width: 100%;
-  height: auto;
 }
 
 /* Display a video player in full screen */
